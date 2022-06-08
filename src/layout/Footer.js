@@ -8,12 +8,17 @@ function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
         <li>
-          <a href="https://www.instagram.com/sasse.lucas/" target="_blank">
+          <a
+            className={styles.link}
+            href="https://www.instagram.com/sasse.lucas/"
+            target="_blank"
+          >
             <FaInstagram />
           </a>
         </li>
         <li>
           <a
+            className={styles.link}
             href="https://www.linkedin.com/in/lucas-eduardo-sasse/"
             target="_blank"
           >
@@ -21,7 +26,11 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/lucassasse" target="_blank">
+          <a
+            className={styles.link}
+            href="https://github.com/lucassasse"
+            target="_blank"
+          >
             <AiFillGithub />
           </a>
         </li>

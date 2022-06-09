@@ -1,9 +1,17 @@
+import Input from '../components/Input'
+import Card from '../components/Card'
+import Button from '../components/Button'
+
 import styles from './Container.module.css'
 
 function Container() {
   return (
     <main className={styles.main}>
-      <p>Organização para o dia-a-dia</p>
+      <div className={styles.divInput}>
+        <Input type="text" placeholder="Esceva seu lembrete" />
+        <Button text="Salvar" />
+      </div>
+      <Card />
     </main>
   )
 }

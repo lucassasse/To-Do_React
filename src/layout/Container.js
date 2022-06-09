@@ -5,12 +5,17 @@ import Button from '../components/Button'
 import styles from './Container.module.css'
 
 function Container() {
+  function save(e) {
+    e.preventDefault()
+    console.log('save')
+  }
+
   return (
     <main className={styles.main}>
-      <div className={styles.divInput}>
-        <Input type="text" placeholder="Esceva seu lembrete" />
-        <Button text="Salvar" />
-      </div>
+      <form className={styles.form}>
+        <Input required type="text" placeholder="Esceva seu lembrete" />
+        <Button text="Salvar" onClick={save} />
+      </form>
       <Card />
     </main>
   )
